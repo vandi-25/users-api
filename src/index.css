@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f1f4f9;
+  color: #222;
+}
+
+header {
+  background: linear-gradient(135deg, #4f46e5, #06b6d4);
+  color: white;
+  text-align: center;
+  padding: 30px 16px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header p {
+  margin: 6px 0 0;
+  opacity: 0.85;
+}
+
+.app > div {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #c7d2fe;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.search:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.user-card {
+  background: white;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-4px);
+}
+
+.user-card h3 {
+  margin: 10px 0 4px;
+}
+
+.user-card p {
+  margin: 4px 0;
+  word-break: break-word;
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #4f46e5;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company {
+  color: #06b6d4;
+  font-weight: bold;
+}
+
+.details {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed #c7d2fe;
+  font-size: 14px;
+}
+
+.hint {
+  display: block;
+  margin-top: 10px;
+  font-size: 13px;
+  color: #888;
+}
+
+.message {
+  text-align: center;
+  font-size: 18px;
+  padding: 40px 0;
+}
+
+.error {
+  color: #dc2626;
+}
